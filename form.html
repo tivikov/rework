@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>reWork — Разместить вакансию</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="rework-header">
+		<div class="container">
+			<div class="top-line rework-flex">
+				<div class="top-line-logo ">
+					<a href="#" class="logo">re<span>W</span>ork</a>
+				</div>
+				<div class="top-line-button">
+					<a href="#" class="button-colored">Разместить вакансию</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="rework-main">
+		<div class="form-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<div class="form-card">
+							<div class="row">
+								<div class="col-10 offset-1">
+									<fieldset>
+										<label for="vacation-name">Название вакансии</label>
+										<input type="text" name="vacation-name" id="vacation-name" placeholder="Front End Developer">
+									</fieldset>
+									<fieldset>
+										<label for="specialization">Специализация</label>
+										<select name="specialization" id="specialization" class="chosen-select-busy-with-search">
+											<option value="" disabled selected>Выберите специализацию вакансии</option>
+											<option value="1">Спец 1</option>
+											<option value="2">Спец 2</option>
+											<option value="3">Спец 3</option>
+											<option value="4">Спец 4</option>
+											<option value="5">Спец 5</option>
+											<option value="6">Спец 6</option>
+											<option value="7">Спец 7</option>
+											<option value="8">Спец 8</option>
+											<option value="9">Спец 9</option>
+										</select>
+									</fieldset>
+									<fieldset>
+										<label for="company-name">Название компании</label>
+										<input type="text" name="company-name" id="company-name" placeholder="Введите название компании">
+									</fieldset>
+									<fieldset>
+										<label for="about-company">О компании</label>
+										<textarea name="about-company" id="about-company" rows="4" class="about-company">
+
+										</textarea>
+									</fieldset>
+									
+									<fieldset>
+										<label for="busy">Тип занятости</label>
+										<select name="busy" id="busy" class="chosen-select-busy">
+											<option value="" disabled selected>Выберите тип занятости</option>
+											<option value="fulltime">Полная занятость</option>
+											<option value="projecttime">Проектная работа</option>
+											<option value="internship">Стажировка</option>
+											<option value="parttime">Частичная занятость</option>
+										</select>
+									</fieldset>
+									<fieldset>
+										<label for="description">Описание вакансии</label>
+										<textarea name="description" id="description" rows="8" class="editor">
+												&lt;p&gt;&lt;strong&gt;Что делать:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Требования:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Условия:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;
+											<!-- &lt;p&gt;&lt;strong&gt;Что делать:&lt;/strong&gt;&lt;br /&gt;- &lt;br /&gt;- &lt;/p&gt;
+											&lt;p&gt;&lt;strong&gt;Требования:&lt;/strong&gt;&lt;br /&gt;- &lt;br /&gt;- &lt;/p&gt;
+											&lt;p&gt;&lt;strong&gt;Условия:&lt;/strong&gt;&lt;br /&gt;- &lt;br /&gt;- &lt;/p&gt; -->
+											
+										</textarea>
+									</fieldset>
+									<fieldset>
+										<label for="category-vacation">Ключевые навыки</label>
+										<select name="category-vacation" id="category-vacation" data-placeholder="Выберите категорию" multiple class="chosen-select">
+											<option value="vac1">Category 1</option>
+											<option value="vac2">Category 2</option>
+											<option value="vac3">Category 3</option>
+										</select>
+									</fieldset>
+									<fieldset>
+										<label>Предполагаемый уровень месячного дохода</label>
+										<div class="field-row">
+												
+											<input type="text" name="zp-from" id="zp-from" placeholder="От">
+										
+												
+											<input type="text" name="zp-to" id="zp-to" placeholder="До">
+											<select name="currency" id="currency" class="chosen-select-busy">
+												<option value="rub">RUB</option>
+												<option value="usd">USD</option>
+												<option value="eur">EUR</option>
+											</select>
+										</div>
+										
+									</fieldset>
+									<fieldset>
+										<label for="contact-info">Контактная информация</label>
+										<input type="text" name="contact-info" id="contact-info" placeholder="Имя, номер телефона, email">
+									</fieldset>
+									
+									
+									<button type="submit" class="button">Предпросмотр</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
+	<script>
+		ClassicEditor
+    .create( document.querySelector( '.editor' ), {
+		toolbar: ['bold', 'italic', 'link', 'bulletedList', 'numberedList']
+	} )
+    .then( editor => {
+        console.log( Array.from( editor.ui.componentFactory.names ) );
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
+		ClassicEditor
+    .create( document.querySelector( '.about-company' ), {
+		toolbar: ['bold', 'italic', 'link', 'bulletedList', 'numberedList']
+	}
+	)
+    .then( editor => {
+        console.log( Array.from( editor.ui.componentFactory.names ) );
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
+	</script>
+
+</body>
+</html>
